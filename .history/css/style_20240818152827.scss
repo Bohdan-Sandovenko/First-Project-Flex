@@ -1,6 +1,6 @@
 @import "nullstyles";
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
-$color-black: rgb(3, 3, 3);
+$color-black: black;
 $color-white: white;
 $color-green: rgb(5, 132, 132);
 $color-grey: rgb(196, 199, 199);
@@ -26,24 +26,24 @@ $back-color-list-before: black;
     font-display: swap;
 }
 
-%styles-link-top {
-    margin: 0 40px 0px 0px;
-    height: 30px;
-    width: 80px;
-    border-radius: 5px;
-    background-color: $color-black;
-    color: $color-white;
-    //font-family: $font-family-top;
-    // font-weight: $font-weight-header;
-    font-size: 15px;
-}
+%styles-link-top {}
 
-%icons_styles_footer {}
+%icons_styles_footer {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    /* Отступ между иконкой и текстом */
+    vertical-align: middle;
+}
 
 .top-of-site {
     width: 100%;
     height: 100px;
-    background-color: $color-black;
+    background-color: black;
     padding: 50px;
     position: fixed;
     font-family: 'Rubik';
@@ -73,15 +73,6 @@ $back-color-list-before: black;
             &:active {
                 width: 79.5px;
                 color: $color-grey;
-            }
-
-            &::after {
-                content: "";
-                background: url('../icons/icon_menu.png');
-                width: 32px;
-                height: 32px;
-                background-size: contain;
-                padding: 0px 20px 0px 0px;
             }
 
         }
@@ -204,7 +195,7 @@ $back-color-list-before: black;
 .footer {
     height: 200px;
     width: 100%;
-    background-color: $color-black;
+    background-color: black;
     color: $color-white;
     padding: 25px 0px 50px 25px;
     line-height: 1.6;

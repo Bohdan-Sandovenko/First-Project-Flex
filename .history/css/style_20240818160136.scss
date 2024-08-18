@@ -1,6 +1,6 @@
 @import "nullstyles";
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
-$color-black: rgb(3, 3, 3);
+$color-black: black;
 $color-white: white;
 $color-green: rgb(5, 132, 132);
 $color-grey: rgb(196, 199, 199);
@@ -43,7 +43,7 @@ $back-color-list-before: black;
 .top-of-site {
     width: 100%;
     height: 100px;
-    background-color: $color-black;
+    background-color: black;
     padding: 50px;
     position: fixed;
     font-family: 'Rubik';
@@ -81,7 +81,7 @@ $back-color-list-before: black;
                 width: 32px;
                 height: 32px;
                 background-size: contain;
-                padding: 0px 20px 0px 0px;
+                padding: 0px 30px 0px 0px;
             }
 
         }
@@ -204,7 +204,7 @@ $back-color-list-before: black;
 .footer {
     height: 200px;
     width: 100%;
-    background-color: $color-black;
+    background-color: black;
     color: $color-white;
     padding: 25px 0px 50px 25px;
     line-height: 1.6;

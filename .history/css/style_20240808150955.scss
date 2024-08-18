@@ -1,6 +1,6 @@
 @import "nullstyles";
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
-$color-black: rgb(3, 3, 3);
+$color-black: black;
 $color-white: white;
 $color-green: rgb(5, 132, 132);
 $color-grey: rgb(196, 199, 199);
@@ -38,12 +38,10 @@ $back-color-list-before: black;
     font-size: 15px;
 }
 
-%icons_styles_footer {}
-
 .top-of-site {
     width: 100%;
     height: 100px;
-    background-color: $color-black;
+    background-color: black;
     padding: 50px;
     position: fixed;
     font-family: 'Rubik';
@@ -75,15 +73,6 @@ $back-color-list-before: black;
                 color: $color-grey;
             }
 
-            &::after {
-                content: "";
-                background: url('../icons/icon_menu.png');
-                width: 32px;
-                height: 32px;
-                background-size: contain;
-                padding: 0px 20px 0px 0px;
-            }
-
         }
     }
 
@@ -93,11 +82,6 @@ $back-color-list-before: black;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 400;
         font-size: 15px;
-        font-family: 'Rubik';
-
-        &:hover {
-            color: rgb(143, 142, 142);
-        }
     }
 }
 
@@ -204,7 +188,7 @@ $back-color-list-before: black;
 .footer {
     height: 200px;
     width: 100%;
-    background-color: $color-black;
+    background-color: black;
     color: $color-white;
     padding: 25px 0px 50px 25px;
     line-height: 1.6;
@@ -212,39 +196,5 @@ $back-color-list-before: black;
     &::first-line {
         font-family: "PT Sans Caption";
         font-size: 17px;
-    }
-
-    .content-bottom-list li {
-        line-height: 2;
-
-        &:nth-child(1)::before {
-            content: "";
-            background: url('../icons/icon_phone.png') left no-repeat;
-            width: 32px;
-            height: 32px;
-            background-size: contain;
-            padding: 0px 0px 0px 20px;
-            // @extend %icons_styles_footer;
-        }
-
-        &:nth-child(2)::before {
-            content: "";
-            background: url('../icons/icon_mail.png') left no-repeat;
-            width: 32px;
-            height: 32px;
-            background-size: contain;
-            padding: 0px 0px 0px 20px;
-            //@extend %icons_styles_footer;
-        }
-
-        &:nth-child(3)::before {
-            content: "";
-            background: url('../icons/icon_location.png') left no-repeat;
-            width: 32px;
-            height: 32px;
-            background-size: contain;
-            padding: 0px 0px 0px 20px;
-            //@extend %icons_styles_footer;
-        }
     }
 }

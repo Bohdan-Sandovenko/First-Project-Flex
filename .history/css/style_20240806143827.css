@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -86,37 +86,24 @@ h6 {
   font-weight: 400;
 }
 
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway/Raleway-Thin.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik/Rubik-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
 .top-of-site .nav-links-of-top .button-menu {
   margin: 0 40px 0px 0px;
   height: 30px;
   width: 80px;
   border-radius: 5px;
-  background-color: rgb(3, 3, 3);
+  background-color: black;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 15px;
 }
 
 .top-of-site {
   width: 100%;
   height: 100px;
-  background-color: rgb(3, 3, 3);
+  background-color: black;
   padding: 50px;
   position: fixed;
-  font-family: "Rubik";
 }
 .top-of-site .nav-links-of-top {
   position: relative;
@@ -131,28 +118,16 @@ h6 {
   width: 79.5px;
   color: rgb(196, 199, 199);
 }
-.top-of-site .nav-links-of-top .button-menu::after {
-  content: "";
-  background: url("../icons/icon_menu.png");
-  width: 32px;
-  height: 32px;
-  background-size: contain;
-  padding: 0px 20px 0px 0px;
-}
 .top-of-site a {
   padding: 0 20px 0 0;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 15px;
-  font-family: "Rubik";
-}
-.top-of-site a:hover {
-  color: rgb(143, 142, 142);
 }
 
 .content {
-  font-family: "PT Sans Caption";
+  font-family: "PT Sans";
   padding: 100px 20px 10px 20px;
   background: url("../images/new-background.jpg");
 }
@@ -160,21 +135,24 @@ h6 {
   margin-bottom: 50px;
 }
 .content .content-top .content-top-image-block {
-  margin: 0px 0px 50px 0px;
+  margin: 50px 0px 50px 0px;
 }
 .content .content-top .content-top-image-block .content-top-image {
-  width: 100%;
-  height: 700px;
+  width: 720px;
+  height: 415px;
+  border: 10px solid white;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 .content .content-top .content-top-text-inside {
-  font-family: "Raleway";
-  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
   font-size: 30px;
 }
 .content .content-top .content-top-list {
   margin-top: 30px;
 }
 .content .content-top .content-top-list li {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.9;
 }
@@ -208,17 +186,18 @@ h6 {
   font-weight: bold;
 }
 .content .content-top .content-top-list li:hover::before {
-  background-color: rgb(5, 132, 132);
+  background-color: rgb(140, 4, 4);
 }
 .content .content-bottom {
   line-height: 1.5;
 }
 .content .content-bottom::first-line {
-  font-family: "Raleway";
-  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
   font-size: 25px;
 }
 .content .content-bottom .content-photo-compotent-bottom {
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 17px;
   margin-bottom: 70px;
@@ -233,39 +212,11 @@ h6 {
 .footer {
   height: 200px;
   width: 100%;
-  background-color: rgb(3, 3, 3);
+  background-color: black;
   color: white;
   padding: 25px 0px 50px 25px;
   line-height: 1.6;
 }
 .footer::first-line {
-  font-family: "PT Sans Caption";
   font-size: 17px;
-}
-.footer .content-bottom-list li {
-  line-height: 2;
-}
-.footer .content-bottom-list li:nth-child(1)::before {
-  content: "";
-  background: url("../icons/icon_phone.png") left no-repeat;
-  width: 32px;
-  height: 32px;
-  background-size: contain;
-  padding: 0px 0px 0px 20px;
-}
-.footer .content-bottom-list li:nth-child(2)::before {
-  content: "";
-  background: url("../icons/icon_mail.png") left no-repeat;
-  width: 32px;
-  height: 32px;
-  background-size: contain;
-  padding: 0px 0px 0px 20px;
-}
-.footer .content-bottom-list li:nth-child(3)::before {
-  content: "";
-  background: url("../icons/icon_location.png") left no-repeat;
-  width: 32px;
-  height: 32px;
-  background-size: contain;
-  padding: 0px 0px 0px 20px;
 }/*# sourceMappingURL=style.css.map */
