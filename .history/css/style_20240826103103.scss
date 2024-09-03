@@ -1,0 +1,354 @@
+@import "nullstyles";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+$color-black: rgb(3, 3, 3);
+$color-white: white;
+$color-green: rgb(5, 132, 132);
+$color-grey: rgb(196, 199, 199);
+$color-content: rgb(235, 235, 235);
+$font-weight-header: 400;
+$back-color-list-before: black;
+
+// fonts
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Thin.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+//font head
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik/Rubik-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+%styles-link-top {
+    margin: 0 40px 0px 0px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: $color-black;
+    color: $color-white;
+    //font-family: $font-family-top;
+    // font-weight: $font-weight-header;
+    font-size: 15px;
+}
+
+%styles-block-offer {
+    color: $color-white;
+    font-family: 'Rubik';
+    background-color: $color-black;
+    // margin-right: 20px;
+    width: 350px;
+}
+
+%padding-for-content {
+    padding-left: 20px;
+}
+
+
+.top-of-site {
+    width: 100%;
+    height: 100px;
+    background-color: $color-black;
+    padding: 50px;
+    position: fixed;
+    font-family: 'Rubik';
+
+    .nav-links-of-top {
+        position: relative;
+        top: 50%;
+        right: -60%;
+
+        .button-menu {
+            // margin: 0 40px 0px 0px;
+            // height: 30px;
+            // width: 80px;
+            // border-radius: 5px;
+            // background-color: $color-black;
+            // color: $color-white;
+            // font-family: $font-family-top;
+            // font-weight: $font-weight-header;
+            // font-size: 15px;
+            @extend %styles-link-top;
+
+            &:hover {
+                opacity: 0.9;
+                border: 1px solid $color-green;
+            }
+
+            &:active {
+                width: 79.5px;
+                color: $color-grey;
+            }
+
+            &::after {
+                content: "";
+                background: url('../icons/icon_menu.png');
+                width: 32px;
+                height: 32px;
+                background-size: contain;
+                padding: 0px 20px 0px 0px;
+            }
+
+        }
+    }
+
+    a {
+        padding: 0 20px 0 0;
+        color: $color-white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: 'Rubik';
+
+        &:hover {
+            color: rgb(143, 142, 142);
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+.content {
+    font-family: "PT Sans Caption";
+    padding: 100px 0px 10px 0px;
+    background: url('../images/new-background.jpg');
+
+    .content-top {
+        margin-bottom: 50px;
+
+        .content-top-image-block {
+            margin: 0px 0px 50px 0px;
+
+            .content-top-image {
+                width: 100%;
+                height: 700px;
+                //border: 10px solid $color-white;
+                // box-shadow: 5px 5px 5px rgb(0, 0, 0);
+            }
+        }
+
+        .content-top-text-inside {
+            @extend %padding-for-content;
+            font-family: 'Raleway';
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .content-top-list {
+            margin-top: 30px;
+            @extend %padding-for-content;
+        }
+
+        .content-top-list li {
+            font-size: 20px;
+            line-height: 1.9;
+
+            &::before {
+                content: "";
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                background-color: $back-color-list-before;
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            &:nth-child(1):hover {
+                font-size: 21px;
+                font-weight: bold;
+            }
+
+            &:nth-child(2):hover {
+                font-size: 21px;
+                font-weight: bold;
+            }
+
+            &:nth-child(3):hover {
+                font-size: 21px;
+                font-weight: bold;
+            }
+
+            &:nth-child(4):hover {
+                font-size: 21px;
+                font-weight: bold;
+            }
+
+            &:nth-child(5):hover {
+                font-size: 21px;
+                font-weight: bold;
+            }
+
+            &:hover::before {
+                background-color: $color-green;
+            }
+        }
+    }
+
+    ///content bottom
+    .content-bottom {
+        line-height: 1.5;
+
+        &::first-line {
+            font-family: 'Raleway';
+            font-weight: 800;
+            font-size: 25px;
+            @extend %padding-for-content;
+        }
+
+        .content-photo-compotent-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-weight: 300;
+            font-size: 17px;
+            margin: 25px 0px 70px 0px;
+
+            .img-component-bottom {
+                height: 300px;
+                width: 500px;
+                border: 2px solid black;
+            }
+        }
+
+        .content-about-outside {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            .content-bottom-about {
+                height: 770px;
+                width: 1100px;
+                background-color: rgb(240, 245, 245);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px;
+
+                .content-bottom-about-image {
+                    height: 700px;
+                    width: 500px;
+                    border-radius: 10px;
+                }
+
+                .content-bottom-about-text {
+                    width: 500px;
+                    font-family: 'Raleway';
+                    line-height: 1.5;
+                    font-weight: 900;
+                    font-size: 17px;
+
+                    .content-bottom-about-buttom-frame {
+                        margin-top: 50px;
+
+                        .content-bottom-about-button {
+                            font-family: 'Raleway';
+                            font-size: 15px;
+                            font-weight: bold;
+                            height: 34px;
+                            display: inline-block;
+                            background-color: black;
+                            color: white;
+                            padding: 0px 10px 0px 10px;
+                            border-radius: 10px;
+
+                            &::after {
+                                content: "";
+                                background: url('../icons/icon_arrow_forward.png');
+                                width: 32px;
+                                height: 32px;
+                                background-size: contain;
+                                padding: 0px 18px 0px 0px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .content-offer-outside {
+            // padding: 0px 50px 0px 50px;
+            height: 300px;
+
+            .content-offer-primary {
+                display: flex;
+                justify-content: space-around;
+                flex-basis: 1;
+                flex-grow: 1;
+
+                .content-offer-safeguard {
+                    @extend %styles-block-offer;
+
+                    .image-offer-safeguard {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .content-offer-devices {
+                    @extend %styles-block-offer;
+                    background-color: black;
+                }
+
+                .content-offer-payment {
+                    @extend %styles-block-offer;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
+
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: $color-black;
+    color: $color-white;
+    padding: 25px 0px 50px 25px;
+    line-height: 1.6;
+
+    &::first-line {
+        font-family: "PT Sans Caption";
+        font-size: 17px;
+    }
+
+    .content-bottom-list li {
+        line-height: 2;
+
+        &:nth-child(1)::before {
+            content: "";
+            background: url('../icons/icon_phone.png') left no-repeat;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            padding: 0px 0px 0px 20px;
+            // @extend %icons_styles_footer;
+        }
+
+        &:nth-child(2)::before {
+            content: "";
+            background: url('../icons/icon_mail.png') left no-repeat;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            padding: 0px 0px 0px 20px;
+            //@extend %icons_styles_footer;
+        }
+
+        &:nth-child(3)::before {
+            content: "";
+            background: url('../icons/icon_location.png') left no-repeat;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            padding: 0px 0px 0px 20px;
+            //@extend %icons_styles_footer;
+        }
+    }
+}
